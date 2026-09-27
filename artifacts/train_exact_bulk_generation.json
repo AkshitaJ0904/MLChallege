@@ -1,0 +1,11 @@
+{
+  "candidate_path": "artifacts\\train_exact_candidates.tsv",
+  "country_partition": false,
+  "exact_index": "artifacts\\train_exact.sqlite",
+  "source1_sha256": "591af0e1dfeb65cab71ea6ee8cb69df00f92d6ba6fa79e05746c938775d14973",
+  "stage": "bulk_exact_candidate_generation",
+  "stats": {
+    "pairs": 22430431,
+    "s1": 2206821
+  }
+}

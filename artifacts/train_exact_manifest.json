@@ -1,0 +1,18 @@
+{
+  "channels": {
+    "exact_address": 9975336,
+    "exact_name": 10320219,
+    "exact_name_address": 10320219
+  },
+  "country_partition": false,
+  "index": "artifacts\\train_exact.sqlite",
+  "input_sha256": {
+    "dataset\\train\\train_source2.tsv": "6336c1a055eec79cf8a6d99fdc8d32a2e4d9dc2662e00963cb35d66b89ed09ed",
+    "dataset\\train\\train_source3.tsv": "67da22f5151898ff3006febd836c1a159e97ae95efa7257a5aff4fda685e58e9"
+  },
+  "stage": "exact_index",
+  "target_paths": [
+    "dataset\\train\\train_source2.tsv",
+    "dataset\\train\\train_source3.tsv"
+  ]
+}

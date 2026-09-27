@@ -1,0 +1,18 @@
+{
+  "status": "foundation-created; full-scale experiments not run",
+  "facts": [
+    "No challenge input TSV was modified.",
+    "No test labels, external entity data, geocoding, or business lookup were used.",
+    "No matching_results.tsv was generated."
+  ],
+  "required_before_final_candidate_selection": [
+    "full exact scorecard",
+    "rare-token grid",
+    "numeric-anchor grid",
+    "postal population scorecard",
+    "partitioned character TF-IDF recall-at-K",
+    "union ablation",
+    "hard-negative export",
+    "test inference resource measurement"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "channels": {
+    "numeric_anchor": 13228855,
+    "postal_soft": 645945,
+    "rare_address": 71165049,
+    "rare_name": 34383484
+  },
+  "country_partition": false,
+  "index": "artifacts\\train_lexical.sqlite",
+  "input_sha256": {
+    "dataset\\train\\train_source2.tsv": "6336c1a055eec79cf8a6d99fdc8d32a2e4d9dc2662e00963cb35d66b89ed09ed",
+    "dataset\\train\\train_source3.tsv": "67da22f5151898ff3006febd836c1a159e97ae95efa7257a5aff4fda685e58e9"
+  },
+  "stage": "lexical_index"
+}

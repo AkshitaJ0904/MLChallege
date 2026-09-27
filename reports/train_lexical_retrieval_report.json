@@ -1,0 +1,472 @@
+{
+  "character_tfidf": "not evaluated: no fitted full-corpus character index is represented by train_lexical.sqlite; building one would be a new index build and was not performed",
+  "final_configuration": "exact_plus_lexical_default",
+  "indexes_read_only": {
+    "exact": "artifacts/train_exact.sqlite",
+    "lexical": "artifacts/train_lexical.sqlite"
+  },
+  "lexical_configurations": {
+    "constrained": {
+      "limits": {
+        "numeric_anchor": 10,
+        "postal_soft": 50,
+        "rare_address": 20,
+        "rare_name": 20
+      },
+      "per_channel_tokens": 1
+    },
+    "default": {
+      "limits": {
+        "numeric_anchor": 20,
+        "postal_soft": 100,
+        "rare_address": 50,
+        "rare_name": 50
+      },
+      "per_channel_tokens": 2
+    }
+  },
+  "results": {
+    "exact_address": {
+      "candidate_count": 769803,
+      "candidate_singleton_s1_rows": 387101,
+      "candidate_zero_s1_rows": 1673802,
+      "cardinality_recall": {
+        "1": 0.07235831717817669,
+        "2": 0.07596238926260354,
+        "3": 0.08163210201673696,
+        "4": 0.08338514609132128,
+        "5": 0.08389629671043028,
+        "6+": 0.0854071371078566
+      },
+      "country_recall": {
+        "India": 0.07595553105175658,
+        "US": 0.08713663492279823
+      },
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.07235831717817669,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 3746,
+      "max": 20,
+      "mean_candidates_per_s1": 0.34882892631527435,
+      "missed_targets": 7006996,
+      "p50": 0,
+      "p95": 2,
+      "p99": 3,
+      "recovered_targets": 631369,
+      "runtime_seconds": 62.562999999994645,
+      "source_recall": {
+        "S2": 0.12479034789457169,
+        "S3": 0.043207091153650956
+      },
+      "target_recall": 0.0826576106274052,
+      "true_targets": 7638365
+    },
+    "exact_name": {
+      "candidate_count": 21760611,
+      "candidate_singleton_s1_rows": 550670,
+      "candidate_zero_s1_rows": 642262,
+      "cardinality_recall": {
+        "1": 0.2204654363570751,
+        "2": 0.21933866720680575,
+        "3": 0.21903671092976365,
+        "4": 0.21831176476663602,
+        "5": 0.2180322216942014,
+        "6+": 0.21801503788919863
+      },
+      "country_recall": {
+        "India": 0.1588990023344335,
+        "US": 0.2582901206983389
+      },
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.2204654363570751,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 46660,
+      "max": 1042,
+      "mean_candidates_per_s1": 9.860614431347173,
+      "missed_targets": 5969572,
+      "p50": 1,
+      "p95": 61,
+      "p99": 176,
+      "recovered_targets": 1668793,
+      "runtime_seconds": 205.0470000000205,
+      "source_recall": {
+        "S2": 0.2144262848983612,
+        "S3": 0.2222662751923698
+      },
+      "target_recall": 0.21847515796901562,
+      "true_targets": 7638365
+    },
+    "exact_name_address": {
+      "candidate_count": 99983,
+      "candidate_singleton_s1_rows": 86973,
+      "candidate_zero_s1_rows": 2113510,
+      "cardinality_recall": {
+        "1": 0.013125540253614978,
+        "2": 0.012894043900514908,
+        "3": 0.013083641492147994,
+        "4": 0.013214835318054594,
+        "5": 0.013026584295418333,
+        "6+": 0.013096190466842043
+      },
+      "country_recall": {
+        "India": 0.007917399683578536,
+        "US": 0.016546169265977097
+      },
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.013125540253614978,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 0,
+      "max": 4,
+      "mean_candidates_per_s1": 0.04530634790950421,
+      "missed_targets": 7538382,
+      "p50": 0,
+      "p95": 0,
+      "p99": 1,
+      "recovered_targets": 99983,
+      "runtime_seconds": 54.0,
+      "source_recall": {
+        "S2": 0.02701199013758593,
+        "S3": 5.348886848481499e-05
+      },
+      "target_recall": 0.013089581343651423,
+      "true_targets": 7638365
+    },
+    "exact_plus_lexical_constrained": {
+      "candidate_count": 28277407,
+      "candidate_singleton_s1_rows": 390266,
+      "candidate_zero_s1_rows": 356903,
+      "cardinality_recall": {
+        "1": 0.43916009970039527,
+        "2": 0.4390651151882136,
+        "3": 0.4404796665417077,
+        "4": 0.4381143943071378,
+        "5": 0.43461828753529197,
+        "6+": 0.4316969894774039
+      },
+      "country_recall": {
+        "India": 0.4414121901025641,
+        "US": 0.4334023075568928
+      },
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.43916009970039527,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 70792,
+      "incremental_recall_over_exact_union": 0.14856778904909623,
+      "incremental_targets_over_exact_union": 1134815,
+      "max": 1042,
+      "mean_candidates_per_s1": 12.813638713787842,
+      "missed_targets": 4303371,
+      "p50": 3,
+      "p95": 63,
+      "p99": 179,
+      "recovered_targets": 3334994,
+      "runtime_seconds": 325.34399999998277,
+      "source_recall": {
+        "S2": 0.46015926385477224,
+        "S3": 0.41456179941623617
+      },
+      "target_recall": 0.4366109763018656,
+      "true_targets": 7638365
+    },
+    "exact_plus_lexical_default": {
+      "candidate_count": 43917636,
+      "candidate_singleton_s1_rows": 310253,
+      "candidate_zero_s1_rows": 283377,
+      "cardinality_recall": {
+        "1": 0.5190463002593217,
+        "2": 0.520804238670405,
+        "3": 0.5230618333298797,
+        "4": 0.5218352044452248,
+        "5": 0.5213683814919383,
+        "6+": 0.5202863039381208
+      },
+      "country_recall": {
+        "India": 0.5472450710706399,
+        "US": 0.5043232291992918
+      },
+      "final_train_candidate_path": "artifacts/train_final_candidates.tsv",
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.5190463002593217,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 81103,
+      "incremental_recall_over_exact_union": 0.23347404843837655,
+      "incremental_targets_over_exact_union": 1783360,
+      "max": 1081,
+      "mean_candidates_per_s1": 19.90086010600769,
+      "missed_targets": 3654826,
+      "p50": 6,
+      "p95": 78,
+      "p99": 185,
+      "recovered_targets": 3983539,
+      "runtime_seconds": 473.68700000000536,
+      "source_recall": {
+        "S2": 0.5424752796647407,
+        "S3": 0.5018934045436639
+      },
+      "target_recall": 0.5215172356911459,
+      "true_targets": 7638365
+    },
+    "exact_union": {
+      "candidate_count": 22430431,
+      "candidate_singleton_s1_rows": 530951,
+      "candidate_zero_s1_rows": 504975,
+      "cardinality_recall": {
+        "1": 0.27969821328163685,
+        "2": 0.2824070125688944,
+        "3": 0.28758517145435264,
+        "4": 0.2884820755399027,
+        "5": 0.28890193410921333,
+        "6+": 0.2903259845302132
+      },
+      "country_recall": {
+        "India": 0.22693713370261154,
+        "US": 0.32888058635516004
+      },
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.27969821328163685,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 49038,
+      "incremental_recall_over_exact_union": 0.0,
+      "incremental_targets_over_exact_union": 0,
+      "max": 1042,
+      "mean_candidates_per_s1": 10.164137009752944,
+      "missed_targets": 5438186,
+      "p50": 2,
+      "p95": 61,
+      "p99": 176,
+      "recovered_targets": 2200179,
+      "runtime_seconds": 208.84299999999348,
+      "source_recall": {
+        "S2": 0.312204642655347,
+        "S3": 0.2654198774775359
+      },
+      "target_recall": 0.2880431872527694,
+      "true_targets": 7638365
+    },
+    "lexical_constrained": {
+      "candidate_count": 6360334,
+      "candidate_singleton_s1_rows": 16382,
+      "candidate_zero_s1_rows": 1624585,
+      "cardinality_recall": {
+        "1": 0.22478746527690358,
+        "2": 0.22174264149334244,
+        "3": 0.2181519513375945,
+        "4": 0.2135690899889489,
+        "5": 0.20838994027152694,
+        "6+": 0.20262316443519574
+      },
+      "country_recall": {
+        "India": 0.2875729244931848,
+        "US": 0.16161984151217357
+      },
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.22478746527690358,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 32967,
+      "incremental_recall_over_exact_union": -0.07596795911166854,
+      "incremental_targets_over_exact_union": -580271,
+      "max": 75,
+      "mean_candidates_per_s1": 2.8821250114984407,
+      "missed_targets": 6018457,
+      "p50": 0,
+      "p95": 17,
+      "p99": 34,
+      "recovered_targets": 1619908,
+      "runtime_seconds": 117.46900000001187,
+      "source_recall": {
+        "S2": 0.2201236781595503,
+        "S3": 0.20453915157021516
+      },
+      "target_recall": 0.21207522814110089,
+      "true_targets": 7638365
+    },
+    "lexical_default": {
+      "candidate_count": 22350181,
+      "candidate_singleton_s1_rows": 10034,
+      "candidate_zero_s1_rows": 1332371,
+      "cardinality_recall": {
+        "1": 0.3377560697231384,
+        "2": 0.3375824867008518,
+        "3": 0.3358431871941567,
+        "4": 0.3330071367340405,
+        "5": 0.33209031019670326,
+        "6+": 0.32964768443990733
+      },
+      "country_recall": {
+        "India": 0.42876971138715286,
+        "US": 0.2693502400993159
+      },
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.3377560697231384,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 48686,
+      "incremental_recall_over_exact_union": 0.0451686977514167,
+      "incremental_targets_over_exact_union": 345015,
+      "max": 197,
+      "mean_candidates_per_s1": 10.127772483586117,
+      "missed_targets": 5093171,
+      "p50": 0,
+      "p95": 48,
+      "p99": 79,
+      "recovered_targets": 2545194,
+      "runtime_seconds": 256.0780000000086,
+      "source_recall": {
+        "S2": 0.3419735495187782,
+        "S3": 0.3250079979800981
+      },
+      "target_recall": 0.3332118850041861,
+      "true_targets": 7638365
+    },
+    "numeric_address_anchor": {
+      "candidate_count": 453296,
+      "candidate_singleton_s1_rows": 1726,
+      "candidate_zero_s1_rows": 2159667,
+      "cardinality_recall": {
+        "1": 0.016499240497830595,
+        "2": 0.01610156391586623,
+        "3": 0.0157322688589113,
+        "4": 0.014942214143333712,
+        "5": 0.014688918085334377,
+        "6+": 0.014102929051003181
+      },
+      "country_recall": {
+        "India": 0.001106919538028585,
+        "US": 0.024305878621965777
+      },
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.016499240497830595,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 2510,
+      "incremental_recall_over_exact_union": -0.2730305503861101,
+      "incremental_targets_over_exact_union": -2085507,
+      "max": 34,
+      "mean_candidates_per_s1": 0.2054067819728016,
+      "missed_targets": 7523693,
+      "p50": 0,
+      "p95": 0,
+      "p99": 10,
+      "recovered_targets": 114672,
+      "runtime_seconds": 59.187000000005355,
+      "source_recall": {
+        "S2": 0.014799577325111226,
+        "S3": 0.015212132796382834
+      },
+      "target_recall": 0.015012636866659292,
+      "true_targets": 7638365
+    },
+    "postal": {
+      "candidate_count": 4569555,
+      "candidate_singleton_s1_rows": 1432,
+      "candidate_zero_s1_rows": 2081700,
+      "cardinality_recall": {
+        "1": 0.040971155702140875,
+        "2": 0.040750295832755884,
+        "3": 0.041201288772595435,
+        "4": 0.04067990043687967,
+        "5": 0.04083029721360306,
+        "6+": 0.04057015391259963
+      },
+      "country_recall": {
+        "India": 0.0,
+        "US": 0.06808070377296428
+      },
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.040971155702140875,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 6781,
+      "incremental_recall_over_exact_union": -0.24723484672439716,
+      "incremental_targets_over_exact_union": -1888470,
+      "max": 181,
+      "mean_candidates_per_s1": 2.070650496800601,
+      "missed_targets": 7326656,
+      "p50": 0,
+      "p95": 6,
+      "p99": 66,
+      "recovered_targets": 311709,
+      "runtime_seconds": 85.21899999998277,
+      "source_recall": {
+        "S2": 0.04024426991522407,
+        "S3": 0.04133650176716067
+      },
+      "target_recall": 0.04080834052837223,
+      "true_targets": 7638365
+    },
+    "rare_address": {
+      "candidate_count": 12757025,
+      "candidate_singleton_s1_rows": 10997,
+      "candidate_zero_s1_rows": 1555311,
+      "cardinality_recall": {
+        "1": 0.24483664409140882,
+        "2": 0.24435785635853863,
+        "3": 0.24376602410137876,
+        "4": 0.24257304566063848,
+        "5": 0.24101106669524192,
+        "6+": 0.24031052455926813
+      },
+      "country_recall": {
+        "India": 0.3476018214006405,
+        "US": 0.17179364869274408
+      },
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.24483664409140882,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 35908,
+      "incremental_recall_over_exact_union": -0.04582276442668032,
+      "incremental_targets_over_exact_union": -350011,
+      "max": 99,
+      "mean_candidates_per_s1": 5.780724852627377,
+      "missed_targets": 5788197,
+      "p50": 0,
+      "p95": 37,
+      "p99": 49,
+      "recovered_targets": 1850168,
+      "runtime_seconds": 142.40700000000652,
+      "source_recall": {
+        "S2": 0.25286500854581917,
+        "S3": 0.2322534834942478
+      },
+      "target_recall": 0.2422204228260891,
+      "true_targets": 7638365
+    },
+    "rare_name": {
+      "candidate_count": 7227319,
+      "candidate_singleton_s1_rows": 722,
+      "candidate_zero_s1_rows": 1920176,
+      "cardinality_recall": {
+        "1": 0.11473098517082504,
+        "2": 0.11451126296600322,
+        "3": 0.1127073203966285,
+        "4": 0.11000278859361928,
+        "5": 0.11051662178489674,
+        "6+": 0.10797317326946484
+      },
+      "country_recall": {
+        "India": 0.12813206429218754,
+        "US": 0.09914771622807535
+      },
+      "ground_truth_singleton_s1_rows": 119157,
+      "ground_truth_singleton_target_recall": 0.11473098517082504,
+      "ground_truth_zero_s1_rows": 123247,
+      "ground_truth_zero_s1_with_candidates": 16393,
+      "incremental_recall_over_exact_union": -0.17728466759574857,
+      "incremental_targets_over_exact_union": -1354165,
+      "max": 97,
+      "mean_candidates_per_s1": 3.274991039146356,
+      "missed_targets": 6792351,
+      "p50": 0,
+      "p95": 29,
+      "p99": 46,
+      "recovered_targets": 846014,
+      "runtime_seconds": 93.79699999999139,
+      "source_recall": {
+        "S2": 0.11108725615717269,
+        "S3": 0.11045071089494736
+      },
+      "target_recall": 0.11075851965702084,
+      "true_targets": 7638365
+    }
+  },
+  "runtime_seconds": 4211.9529999999795,
+  "selection_rule": "retain default lexical caps only if its exact+lexical candidate count is <=3x the constrained exact+lexical count; otherwise use constrained",
+  "stage": "train_retrieval_evaluation"
+}
